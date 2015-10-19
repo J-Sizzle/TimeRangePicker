@@ -17,13 +17,25 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"></TabWidget>
+                android:layout_height="wrap_content"/>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/dayGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <NumberPicker
+                        android:id="@+id/dayPicker"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/startTimeGroup"
@@ -34,7 +46,7 @@
                     <TimePicker
                         android:id="@+id/startTimePicker"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"></TimePicker>
+                        android:layout_height="wrap_content"/>
 
 
                 </LinearLayout>
@@ -48,7 +60,7 @@
                     <TimePicker
                         android:id="@+id/endTimePicker"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"></TimePicker>
+                        android:layout_height="wrap_content"/>
                 </LinearLayout>
 
             </FrameLayout>

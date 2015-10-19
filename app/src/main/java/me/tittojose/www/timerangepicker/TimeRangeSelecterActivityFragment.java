@@ -51,8 +51,8 @@ public class TimeRangeSelecterActivityFragment extends Fragment implements TimeR
     }
 
     @Override
-    public void onTimeRangeSelected(int startHour, int startMin, int endHour, int endMin) {
-        String startTime = startHour + " : " + startMin;
+    public void onTimeRangeSelected(int day, int startHour, int startMin, int endHour, int endMin) {
+        String startTime = day + " " + startHour + " : " + startMin;
         String endTime = endHour + " : " + endMin;
         timeRangeSelectedTextView.setText(startTime + "\n" + endTime);
     }
